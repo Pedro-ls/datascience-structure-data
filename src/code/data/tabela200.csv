@@ -1,0 +1,50 @@
+﻿"Tabela 200 - População residente, por sexo, situação e grupos de idade - Amostra - Características Gerais da População"
+"Variável - População residente (Pessoas)"
+"","Grupo de idade","Ano x Sexo x Situação do domicílio"
+"","Grupo de idade","2010"
+"","Grupo de idade","Total","Homens","Mulheres"
+"","Grupo de idade","Total","Total","Total"
+"Brasil","Total","190755799","93406990","97348809"
+"Brasil","0 a 4 anos","13806733","7025701","6781032"
+"Brasil","5 a 9 anos","14967767","7623609","7344159"
+"Brasil","10 a 14 anos","17167135","8727095","8440040"
+"Brasil","15 a 19 anos","16986788","8557608","8429180"
+"Brasil","20 a 24 anos","17240864","8627665","8613199"
+"Brasil","25 a 29 anos","17102917","8458790","8644127"
+"Brasil","30 a 34 anos","15744616","7718081","8026535"
+"Brasil","35 a 39 anos","13888191","6767177","7121014"
+"Brasil","40 a 44 anos","13008496","6319971","6688525"
+"Brasil","45 a 49 anos","11834647","5692722","6141925"
+"Brasil","50 a 54 anos","10134322","4825839","5308482"
+"Brasil","55 a 59 anos","8284433","3912544","4371889"
+"Brasil","60 a 64 anos","6503287","3033130","3470156"
+"Brasil","65 a 69 anos","4852789","2224862","2627927"
+"Brasil","70 a 74 anos","3744738","1675553","2069185"
+"Brasil","75 a 79 anos","2570686","1089024","1481662"
+"Brasil","80 a 84 anos","1661523","666031","995492"
+"Brasil","85 a 89 anos","816803","311493","505310"
+"Brasil","90 a 94 anos","319959","113116","206843"
+"Brasil","95 a 99 anos","96430","29994","66437"
+"Brasil","100 anos ou mais","22676","6987","15689"
+"Fonte: IBGE - Censo Demográfico"
+
+"Notas"
+"1 - Para o ano de 1991, dados do Universo. Para os demais anos, dados da Amostra"
+"2 - Até o ano de 1991 os grupos de idade vão até 80 anos ou mais; a partir de 2000, vão até 100 anos ou mais."
+""
+"Legenda"
+"Símbolo","Significado"
+"-","Zero absoluto, não resultante de um cálculo ou arredondamento.
+Ex: Em determinado município não existem pessoas de 14 anos de idade sem instrução."
+"0","Zero resultante de um cálculo ou arredondamento.
+Ex: A inflação do feijão em determinada Região Metropolitana foi 0.
+Determinado município produziu 400 kg de sementes de girassol e os dados da tabela são expressos em toneladas."
+"X","Valor inibido para não identificar o informante.
+Ex: Determinado município só possui uma empresa produtora de cimento, logo o valor de sua produção deve ser inibido."
+"..","Valor não se aplica.
+Ex: Não se pode obter o total da produção agrícola em determinado município quando os produtos agrícolas são contabilizados com unidades de medida distintas."
+"...","Valor não disponível.
+Ex: A produção de feijão em determinado município não foi pesquisada ou determinado município não existia no ano da pesquisa."
+"A a Z
+(exceto X)","Significa uma faixa de valores. Varia em função da tabela (se for o caso).
+Ex: O nível de precisão da produção estimada de combustíveis está na faixa A (95 a 100%)"

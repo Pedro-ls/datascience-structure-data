@@ -1,0 +1,7 @@
+COLOQUE AS REFERENCIAS AQUI ABAIXO:
+Pedro henrique da silva
+Flavia porto da silva
+Natalia porto da silva
+Rosana tavares porto da silva
+
+Este software ofereceria um ambiente interativo, para os usuarios de onibus ou qualquer meio de transporte coletivo darem feedbacks sobre a condição de transporte, que ajudaria na sua manutenção e e nas providencias a aserem tomamadas.
