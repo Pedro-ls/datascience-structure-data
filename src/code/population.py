@@ -1,3 +1,4 @@
+from .process import datasets
 from .imports import *
 def sobrepor_barras(mt, data, pais):
     is_girl_or_boy = 0 # girl = 1, boy = 0
@@ -24,8 +25,8 @@ def brasil_state(mt = mt):
     configuration()
     idade = 0
 
-    brasil = pd.read_csv(FOLDER_MAIN+ FOLDER_COUNTRY+ "Brazil-2020.csv")
-    states = pd.read_csv(FOLDER_MAIN+ FOLDER_COUNTRY+"United States of America-2020.csv")
+    brasil = datasets(URI_UNIT, "Brazil Population")
+    states = datasets(URI_UNIT, "Country United States Population")
     brasil.columns = ["idade", "masculino", "feminino"]
     states.columns = ["idade", "masculino", "feminino"]
     brasil["feminino"]

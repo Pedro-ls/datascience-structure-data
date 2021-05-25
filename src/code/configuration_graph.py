@@ -1,4 +1,5 @@
-from .imports import *
+from src.code.variables import *
+import matplotlib.pyplot as mt 
 
 def configuration(
         mat = mt, 

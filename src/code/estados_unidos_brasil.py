@@ -1,4 +1,5 @@
 from .imports import *
+from .process import datasets
 
 def forr_plot_point(mt:mt, cont, fim, dadosx, dadosy, label, colors):    
     mt.scatter(dadosx[cont], dadosy[cont],color=colors, label=label)
@@ -9,18 +10,35 @@ def forr_plot_point(mt:mt, cont, fim, dadosx, dadosy, label, colors):
     return forr_plot_point(mt, cont+1, fim, dadosx, dadosy, label, colors)
 
 
-def populacional():
-    states = FOLDER_MAIN + FOLDER_COUNTRY + "United States of America-2020.csv"
-    brasil = FOLDER_MAIN + FOLDER_COUNTRY + "Brazil-2020.csv"
+def convert_int_populacional(data:pd.DataFrame):
+    data["masculino"] = pd.to_numeric(data["masculino"])
+    data["feminino"] = pd.to_numeric(data["feminino"])
+    
+    return data
+    
 
-    states = pd.read_csv(states)
-    brasil = pd.read_csv(brasil)
+def populacional():
+    # states = FOLDER_MAIN + FOLDER_COUNTRY + "United States of America-2020.csv"
+    # brasil = FOLDER_MAIN + FOLDER_COUNTRY + "Brazil-2020.csv"
+
+    # states = pd.read_csv(states)
+    # brasil = pd.read_csv(brasil)
+    states = datasets(URI_UNIT, "Country United States Population")
+    brasil = datasets(URI_UNIT, "Brazil Population")
+    
+    
 
     brasil.columns = ["idade", "masculino", "feminino"]
     states.columns = ["idade", "masculino", "feminino"]
-
+    
+    brasil = convert_int_populacional(brasil)
+    states = convert_int_populacional(states)
+    
+    
     feminino = states["feminino"][:] + brasil["feminino"][:]
     masculino = states["masculino"][:] + brasil["masculino"][:]
+    
+    
 
     feminino_state = sum(states["feminino"][:])
     feminino_brasil = sum(brasil["feminino"][:])

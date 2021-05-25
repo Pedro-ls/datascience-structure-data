@@ -1,17 +1,18 @@
 from .imports import *
+from .process import datasets
 
 def country(src, nacionalidade):
     
     idade = 0
-    masc = 1
-    fem = 2
 
     PINK:str = str('#EB15E7')
     BLUE:str = str('#2036F7')
 
-    dataframe = pd.read_csv(src)
+    dataframe = datasets(URI_UNIT, src)
     dataframe.columns = ["idade", "masculino", "feminino"]
 
+    dataframe = convert_int_populacional(dataframe)
+    print(dataframe)
 
     idade = []
     masculino = []
@@ -48,7 +49,7 @@ def country(src, nacionalidade):
             bar = mt.bar(x=data["idade"][i], height=data["feminino"][i], color=PINK)
             is_girl_or_boy = 1
 
-
+        print(data["idade"][i], " -> ", data["feminino"][i])
         
         if is_girl_or_boy:
             bar = mt.bar(x=data["idade"][i], height=data["masculino"][i], color=BLUE)
@@ -65,9 +66,9 @@ def country(src, nacionalidade):
 
 def populacao_state():
     configuration()
-    country(FOLDER_MAIN + FOLDER_COUNTRY + "United States of America-2020.csv", "americana")
+    country("Country United States Population", "americana")
 
 
 def populacao_brasil():
     configuration()
-    country(FOLDER_MAIN + FOLDER_COUNTRY + "Brazil-2020.csv", "brasileira")
+    country("Brazil Population", "brasileira")

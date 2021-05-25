@@ -1,5 +1,6 @@
 from pandas.core.frame import DataFrame
 from src.code.variables import ROW_COUNTRY
+from src.code.paths import URI_UNIT
 
 def process(src):
     
@@ -78,13 +79,14 @@ def datasets(src:str="", busca:str = ""):
     
     colunas = str(row_colunas).split(",")
     
-    return DataFrame(array_dados, columns=colunas)
+    data = DataFrame(array_dados, columns=colunas)
     
-    
-    
-    
-    
+    tamanho = len(data.columns) - 1
 
-print(datasets("c://Users/Natália Porto/Documents/teste-python/project/danilo-project/src/code/data/unit.csv", "BRASIL SAUDE"))
+    value = data.columns[tamanho]
 
+    for i, c in enumerate(data[value]):
+        data[value][i] = float(c.replace("\n", ""))
 
+    return data
+    

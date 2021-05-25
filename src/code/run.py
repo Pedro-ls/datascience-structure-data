@@ -3,15 +3,12 @@ from .imports import *
 def espaco():
     print()
     print()
-    
 
-def main(): #-> int:
-    
-    
+
+def main(): #-> int:    
     print("Nomes: Jaime Vaz Nogueira, Pedro Henrique da Silva")
     print("Professor: Danilo")
 
-    time.sleep(5)
     a = []
     a.sort()
     while True:
@@ -52,7 +49,7 @@ def main(): #-> int:
                 print("1.2 - Mostrar Estados Unidos.")
                 populacao_state()
                 print("1.3 - Mostrar Brasil e Estados Unidos")
-                brasil_state()
+                # brasil_state()
                 espaco()
                 populacional()
                 espaco()
@@ -61,8 +58,17 @@ def main(): #-> int:
                 print("\033[1;94m")
                 so.system("Clear") or None
                 print("2.1 - Mostrar Brasil.")
+                
+                # colocar aqui a condição do Brasil                
+                
                 print("2.2 - Mostrar Estados Unidos.")
+                
+                # colocar aqui a condição do Estados Unidos
+                
                 print("2.3 - Mostrar Brasil e Estados Unidos")
+                
+                # comparar Estados Unidos e Brasil 
+                
                 input("continuar pressione [enter]")
             elif(res == 500):
                 print("\033[1;31m")
@@ -81,10 +87,3 @@ def main(): #-> int:
             break
         
     return int(0)
-
-
-
-
-
-
-
