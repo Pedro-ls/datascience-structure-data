@@ -63,5 +63,23 @@ Age,M,F
 90-94,161001,349826
 95-99,37722,96880
 100+,5675,15475
+------------------Doencas Estados Unidos 2019-2020
+CAUSA DA MORTE,ANO,TOTAL DE MORTOS
+doenças do coração,2019,659041
+cancer,2019,599601
+covid-19,2019,
+alzheimer,2019,121499
+diabetes,2019,87647
+infruenza e pneumunia,2019,49783
+doença de kidney,2019,51565
+doenças respiratorias cronicas,2019,156979 
+doenças do coração,2020,690882
+cancer,2020,598932
+covid-19,2020,345323
+doenças respiratorias cronicas,2020,151637
+alzheimer,2020,133382
+diabetes,2020,101106
+infruenza e pneumunia,2020,53495
+doença de kidney,2020,52260
 ------------------FIM
 

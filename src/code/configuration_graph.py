@@ -16,7 +16,7 @@ def configuration(
         hatch_color = WHITE,
         label_color = WHITE
     ):
-    
+    mat.style.use("ggplot")
     mat.rcParams['xtick.color'] = color_x
     mat.rcParams['ytick.color'] = color_y
     mat.rcParams["font.weight"] = weight

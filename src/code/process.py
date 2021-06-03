@@ -1,6 +1,5 @@
 from pandas.core.frame import DataFrame
 from src.code.variables import ROW_COUNTRY
-from src.code.paths import URI_UNIT
 
 def process(src):
     
@@ -86,7 +85,7 @@ def datasets(src:str="", busca:str = ""):
     value = data.columns[tamanho]
 
     for i, c in enumerate(data[value]):
-        data[value][i] = float(c.replace("\n", ""))
+        data[value][i] = c.replace("\n", "")
 
-    return data
+    return data, tamanho
     

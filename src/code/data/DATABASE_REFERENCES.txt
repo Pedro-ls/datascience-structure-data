@@ -1,7 +1,19 @@
 COLOQUE AS REFERENCIAS AQUI ABAIXO:
-Pedro henrique da silva
-Flavia porto da silva
-Natalia porto da silva
-Rosana tavares porto da silva
 
-Este software ofereceria um ambiente interativo, para os usuarios de onibus ou qualquer meio de transporte coletivo darem feedbacks sobre a condição de transporte, que ajudaria na sua manutenção e e nas providencias a aserem tomamadas.
+Lugadores populationpyramid Link: populationpyramid.net : mostra a idade etária das pessoas.
+
+Opinião do tipo de dado e descrição do site e base de dados pesquisada:
+
+Este site busca informações populacionais e coloca, ele pode parecer estranho, pois ele oferece dados de anos que não passarm ainda, mas são previsôes, ele apresenta dados, de um ano, mas não mostra a data da contagem então não dá para ser exato ao comparar população(não é um dado estático, então não d[a para sse yer precisão e os resultados podem passar longe da realidade).
+
+
+
+Arquivos baixados
+Dentro de data/saúde e data/countries
+
+
+
+Arquivos
+* Brazil-2020.csv - populationpyramid
+* United-States.csv - populationpyramid
+* file.csv - 
