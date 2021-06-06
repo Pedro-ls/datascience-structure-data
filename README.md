@@ -11,7 +11,7 @@
 **python [main.py](https://www.github.com/Pedro-ls/datascience-structure-data/blob/master/main.py)**
 
 # datascience-structure-data
-## criar arquivo chado "env"
+## criar arquivo chamado "env"
 
 ### Colocar nele essas veriaveis sem aspas
 
