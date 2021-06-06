@@ -17,3 +17,6 @@ Arquivos
 * Brazil-2020.csv - populationpyramid
 * United-States.csv - populationpyramid
 * file.csv - 
+* dados_brasil_2019_limpos - Dados pegos no DataSus
+* 
+

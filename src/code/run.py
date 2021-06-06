@@ -1,3 +1,4 @@
+from .doencas import doencas_estados_unidos
 from .imports import *
 
 def espaco():
@@ -63,7 +64,7 @@ def main(): #-> int:
                 
                 print("2.2 - Mostrar Estados Unidos.")
                 
-                # colocar aqui a condição do Estados Unidos
+                doencas_estados_unidos()
                 
                 print("2.3 - Mostrar Brasil e Estados Unidos")
                 

@@ -1,8 +1,5 @@
-# import os
+from env_process import paths
 
-
-FOLDER_MAIN:str = "C:\\Users\\Natália Porto\\Documents\\teste-python\\project\\danilo-project"
-# FOLDER_COUNTRY:str = "\\src\\code\\data\\countries\\"
-# FOLDER_SAUDE:str = "\\src\\code\\data\\saude\\"
-FOLDER_OUTPUT:str = "\\src\\output\\"
-URI_UNIT:str = "c://Users/Natália Porto/Documents/teste-python/project/danilo-project/src/code/data/unit.csv"
+FOLDER_MAIN:str = paths()[0]["valor"]
+FOLDER_OUTPUT:str = paths()[1]["valor"]
+URI_UNIT:str = paths()[2]["valor"].replace("Ã¡", "á")

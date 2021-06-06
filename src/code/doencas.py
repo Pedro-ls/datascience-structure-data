@@ -1,10 +1,10 @@
 from src.code.process import datasets
 from src.code.paths import URI_UNIT
-from src.code.modules import convert_int
+from src.code.modules import convert_int, percent_location
 import matplotlib.pyplot as plt
 from src.code.configuration_graph import configuration
-def doencas_estados_unidos():
 
+def doencas_estados_unidos():
     dataset = datasets(src=URI_UNIT, busca="Doencas Estados Unidos 2019-2020")
 
     data = dataset[0]
@@ -25,23 +25,51 @@ def doencas_estados_unidos():
 
     data[coluna_incidentes_new] = deaths
 
-    valores = data.groupby("ANO").sum()
+    anos = data["ANO"]
+    
+    mortes = []
+    causas = []
+    
+    for i, valor in enumerate(anos):
+        if(valor == "2019"): 
+            causas.append(data["CAUSA DA MORTE"][i])
+            mortes.append(data["TOTAL DE MORTOS"][i])
+    
+    
+    rotulos = ["doenças do coração",
+    "cancer",
+    "alzheimer",
+    "diabetes",
+    "infruenza e pneumunia",
+    "doença de kidney",
+    "doenças respiratorias cronicas"]
+    
+    plt.style.use("ggplot")
+    
+    plt.xlabel("Doenças mais comuns")
+    plt.ylabel("Quantidade de Mortos")
 
-    ano1 = valores["TOTAL DE MORTOS"]["2019"]
-    ano2 = valores["TOTAL DE MORTOS"]["2020"]
-
-    dados = [int(ano1), int(ano2)]
-
-    configuration()
-
-
-    plt.bar(x=["2019", "2020"], height=dados, label="2019 e 2020")
-
-    plt.xlabel = "anos"
-    plt.ylabel = "quantidade de mortos"
-
-    plt.legend()
-
+    plt.title("Doenças Estados Unidos 2019")
+    
+    plt.xticks = rotulos
+    
+    
+      
+    plt.bar(x = causas, height= mortes)
+    
+    plt.show()
+    
+    soma_mortes = sum(mortes)
+    
+    pencentual_doencas = []
+    
+    for i in range(len(mortes)):
+        pencentual_doencas.insert(i, percent_location(soma_mortes, mortes[i]))
+    
+    plt.title("Percentual de doenças EUA")
+    plt.pie(pencentual_doencas, labels=mortes)
+    plt.legend(rotulos, loc="lower left")
+    
     plt.show()
 
 

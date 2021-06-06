@@ -1,0 +1,153 @@
+ Mortalidade - Brasil
+�bitos p/Ocorr�nc por Causa - CID-BR-10 e Ano do �bito
+Per�odo:2019
+"Causa - CID-BR-10";"2019";"Total"
+"001-031 ALGUMAS DOEN�AS INFECCIOSAS E PARASIT�RIAS";56666;56666
+". 001 Doen�as infecciosas intestinais";4875;4875
+"... 003 Diarr�ia e gastroenterite orig infec pres";3856;3856
+"... 004 Outras doen�as infecciosas intestinais";1019;1019
+"..... 004.1 Febres tif�ide e paratif�ide";1;1
+". 005-006 Tuberculose";4532;4532
+"... 005 Tuberculose respirat�ria";4068;4068
+"... 006 Outras tuberculoses";464;464
+". 007-015 Outras doen�as bacterianas";25858;25858
+"... 008 Leptospirose";347;347
+"... 009 Hansen�ase";150;150
+"... 010 T�tano";72;72
+"..... 010.1 T�tano neonatal";2;2
+"..... 010.3 T�tano acidental";70;70
+"... 011 Difteria";6;6
+"... 012 Coqueluche";6;6
+"... 013 Infec��o meningoc�cica";192;192
+"... 014 Septicemia";21671;21671
+"... 015 Infec��es com transmiss�o predom sexual";287;287
+". 016-023 Doen�as virais";14638;14638
+"... 018 Dengue";513;513
+"... 019 Febre amarela";18;18
+"... 020 Out febres p/arbov�rus e febr hemor virais";633;633
+"... 021 Sarampo";11;11
+"... 022 Hepatite viral";2123;2123
+"... 023 Doen p/v�rus da imunodefic humana (HIV)";10687;10687
+". 024-027 Doen�as transmitidas por protozo�rios";4723;4723
+"... 024 Mal�ria";37;37
+"... 025 Leishmaniose";257;257
+"... 026 Doen�a de Chagas";4287;4287
+"... 027 Toxoplasmose";55;55
+". 028-030 Helmint�ases";576;576
+"... 028 Esquistossomose";462;462
+"... 029 Cisticercose";60;60
+"... 030 Restante de helmint�ases";54;54
+". 031 Restante algumas doen� infec e parasit�rias";1464;1464
+"032-052 NEOPLASIAS";235301;235301
+". 032 Neopl malig do l�bio, cav oral e faringe";8380;8380
+". 033 Neoplasia maligna do es�fago";8716;8716
+". 034 Neoplasia maligna do est�mago";15111;15111
+". 035 Neoplasia maligna do c�lon,reto e �nus";20578;20578
+". 036 Neopl malig do f�gado e vias bil intrahep�t";10902;10902
+". 037 Neoplasia maligna do p�ncreas";11801;11801
+". 038 Neoplasia maligna da laringe";4532;4532
+". 039 Neopl malig da traqu�ia,br�nquios e pulm�es";29354;29354
+". 040 Neoplasia maligna da pele";1978;1978
+". 041 Neoplasia maligna da mama";18296;18296
+". 042 Neoplasia maligna do colo do �tero";6596;6596
+". 043 Neopl malig de corpo e partes n/esp �tero";3865;3865
+". 044 Neoplasia maligna do ov�rio";4123;4123
+". 045 Neoplasia maligna da pr�stata";15983;15983
+". 046 Neoplasia maligna da bexiga";4517;4517
+". 047 Neopl malig mening,enc�f e out partes SNC";9712;9712
+". 048 Linfoma n�o-Hodgkin";4713;4713
+". 049 Mieloma mult e neopl malig de plasm�citos";3600;3600
+". 050 Leucemia";7370;7370
+". 051 Neoplasias in situ, benig, comport incert";4263;4263
+". 052 Restante de neoplasias malignas";40911;40911
+"053-054 D SANGUE E ORG HEMAT E ALGUNS TRANS IMUNIT";7068;7068
+". 053 Anemias";4551;4551
+". 054 Rest d sangue, org hemat e alg transt imunit";2517;2517
+"055-057 D END�CRINAS, NUTRICIONAIS E METAB�LICAS";83485;83485
+". 055 Diabetes mellitus";66711;66711
+". 056 Desnutri��o";5309;5309
+". 057 Rest doen�as end�cr, nutricion e metab�licas";11465;11465
+"058-059 TRANSTORNOS MENTAIS E COMPORTAMENTAIS";14526;14526
+". 058 Transt ment e comport uso subst psicoativas";8917;8917
+"... 058.1 Trans ment e comport devid uso �lcool";6445;6445
+". 059 Rest transtornos mentais e comportamentais";5609;5609
+"060-063 DOEN�AS DO SISTEMA NERVOSO";45235;45235
+". 060 Meningite";879;879
+". 061 Doen�a de Alzheimer";23150;23150
+". 062 Epilepsia";3268;3268
+". 063 Restante das doen�as do sistema nervoso";17938;17938
+"064 DOEN�AS DOS OLHOS E ANEXOS";23;23
+"065 DOEN�AS DO OUVIDO E DA AP�FISE MAST�IDE";206;206
+"066-072 DOEN�AS DO APARELHO CIRCULAT�RIO";364132;364132
+". 066 Febre reum�t aguda e doen reum cr�n cora��o";2120;2120
+". 067 Doen�as hipertensivas";53796;53796
+". 068 Doen�as isqu�micas do cora��o";117549;117549
+"... 068.1 Infarto agudo do mioc�rdio";95557;95557
+". 069 Outras doen�as card�acas";70761;70761
+". 070 Doen�as cerebrovasculares";101074;101074
+". 071 Aterosclerose";1011;1011
+". 072 Rest doen�as do aparelho circulat�rio";17821;17821
+"073-077 DOEN�AS DO APARELHO RESPIRAT�RIO";162005;162005
+". 073 Influenza (gripe)";1125;1125
+". 074 Pneumonia";83080;83080
+". 075 Out infec agudas das vias a�reas inferiores";961;961
+"... 075.1 Bronquiolite";372;372
+". 076 Doen�as cr�nicas das vias a�reas inferiores";49694;49694
+"... 076.1 Asma";2488;2488
+". 077 Restante  doen�as do aparelho respirat�rio";27145;27145
+"078-082 DOEN�AS DO APARELHO DIGESTIVO";68770;68770
+". 078 �lcera g�strica, duodenal e p�ptica";4200;4200
+". 079 Peritonite";1799;1799
+". 080 Doen�as do f�gado";25733;25733
+"... 080.1 Doen�a alco�lica do f�gado";9799;9799
+"... 080.2 Fibrose e cirrose do f�gado";9506;9506
+"... 080.3 Outras doen�as do f�gado";6428;6428
+". 081 Colecistite";1937;1937
+". 082 Rest doen�as do aparelho digestivo";35101;35101
+"083 DOEN�AS DA PELE E TECIDO SUBCUT�NEO";7152;7152
+"084 DOEN�AS SIST OSTEOMUSC E TECIDO CONJUNTIVO";6506;6506
+"085-087 DOEN�AS DO APARELHO GENITURIN�RIO";47566;47566
+". 085 D glomerulares e d renais t�bulo-interstic";5223;5223
+". 086 Insufici�ncia renal";16415;16415
+". 087 Rest doen�as do aparelho geniturin�rio";25928;25928
+"088-092 GRAVIDEZ, PARTO E PUERP�RIO";1725;1725
+". 088 Gravidez que termina em aborto";108;108
+". 089 Outras causas obst�tricas diretas";924;924
+". 090 Causas obst�tricas indiretas";466;466
+". 091 Causa obst�trica n�o espec direta/indireta";62;62
+". 092 Causas maternas tardias e sequelas";165;165
+"093-097 ALG AFEC��ES ORIGIN NO PER�ODO PERINATAL";20354;20354
+". 093 Feto e recemnasc afet fat mat e compl grav";5941;5941
+". 094 Transt relac dura��o gesta��o e cresc fetal";1716;1716
+". 095 Traumatismo de parto";57;57
+". 096 Trans resp e cardiovas espec per perinatal";6854;6854
+". 097 Rest afec originadas no per�odo perinatal";5786;5786
+"098-100 MALF CONG�N, DEFORM E ANOMAL CROMOSS�MICAS";11308;11308
+". 098 Malforma��es cong�nitas do sistema nervoso";1787;1787
+". 099 Malf cong�nitas do aparelho circulat�rio";4349;4349
+". 100 Rest de malf cong, deform e anomal Cromoss";5172;5172
+"101-103 SINT, SIN E ACH ANORM CL�N E LAB, NCOP";74972;74972
+". 101 Senilidade";3097;3097
+". 102 Morte sem assist�ncia m�dica";10253;10253
+". 103 Rest sint, sin e ach anorm cl�n e laborat";61622;61622
+"104-113 CAUSAS EXTERNAS DE MORBIDADE E MORTALIDADE";142800;142800
+". 104 Acidentes de transporte";32879;32879
+". 105 Quedas";15538;15538
+". 106 Afogamento e submers�es acidentais";4869;4869
+". 107 Exposi��o � fuma�a, ao fogo e �s chamas";847;847
+". 108 Envenen, intoxic por ou expos a subst nociv";803;803
+". 109 Les�es autoprovocadas voluntariamente";13520;13520
+". 110 Agress�es";44033;44033
+". 111 Eventos(fatos) cuja inten��o � indeterminada";16648;16648
+". 112 Interven��es legais e opera��es de guerra";1470;1470
+". 113 Todas as outras causas externas";12193;12193
+"Total";1349800;1349800
+ Fonte: MS/SVS/CGIAE - Sistema de Informa��es sobre Mortalidade - SIM
+ Nota:
+ 
+ Em 2011, houve uma mudan�a no conte�do da Declara��o de �bito, com maior detalhamento das informa��es coletadas. Para este ano, foram
+ utilizados simultaneamente os dois formul�rios. Para mais detalhes sobre as mudan�as ocorridas e os seus efeitos, veja o documento
+ "Sistema de Informa��es sobre Mortalidade - SIM. Consolida��o da base de dados de 2011".
+ No dia 13/06/2019, os arquivos do SIM referentes ao ano de notifica��o 2017 foram atualizados, com altera��o das causas b�sicas de 2 registros e exclus�o de 1 registro.
+ No dia 01/04/2020, os arquivos do SIM referentes ao ano de notifica��o 2019 foram atualizados, com altera��o das causas b�sicas de 4 registros e exclus�o de 1 registro.
+ 

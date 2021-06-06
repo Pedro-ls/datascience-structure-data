@@ -12,3 +12,15 @@ def convert_int(data:pd.DataFrame, column = ""):
         return pd.to_numeric(data)
     else:
         return pd.to_numeric(data[column])
+    
+
+def percent_location(valor_total, value):
+    """ 
+        100     valor_total
+         x         value
+    """
+    
+    perc = (100 * value) / valor_total
+
+    return perc
+    
