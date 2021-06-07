@@ -160,8 +160,6 @@ def filtro(busca:str):
         
         array = informacoes(4)
         
-        input("Digite o nome da doença: ")
-        
         success(busca)
         
         dataframe0:pd.DataFrame = array[0]
@@ -183,9 +181,20 @@ def filtro(busca:str):
         dataframe0["PAIS"] = ["EUA"] * 16
         
         df_data = pd.concat([dataframe0, dataframe1], ignore_index=True)
-         
-        print(df_data) # dados concatenados EUA BRASIL
         
+        print()
+        print("DOENÇAS DISPONIVEIS")
+        print()
+        print(df_data["CAUSA DA MORTE"])
+        chave = True
+        while chave == True:
+            
+            searchBusca = str(input("Digite o nome da doença: ")).strip()
+            
+            resultado = df_data.loc[df_data["CAUSA DA MORTE"] == searchBusca.lower()]
+            
+            print(resultado)
+            chave = str(input("deseja digitar outra doença digite S para Sim, qualquer outra tecla para não")).upper() == "S"
     else:
     
         print("nenhuma informação encontrada:")

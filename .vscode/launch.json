@@ -4,8 +4,10 @@
     // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+    
         {
-            "name": "Python: Arquivo Atual",
+            "name": "Python: ${relativeFileDirname}",
             "type": "python",
             "request": "launch",
             "program": "${file}",
