@@ -1,3 +1,4 @@
+from .search import filtro
 from .doencas import doencas_estados_unidos
 from .imports import *
 
@@ -24,6 +25,7 @@ def main(): #-> int:
         print("Opções:")
         print("\t1. - Mostrar resultados populacional")
         print("\t2. - Mostrar resultados da saúde.")
+        print("\t3. - filtro de doenças e paises.")
         print()
 
         res = 0
@@ -31,7 +33,7 @@ def main(): #-> int:
         try:
             print()
             res: int = int(input(
-                "Insira a opção para mostrar aos resultados das opções [ '1', '2' ], digite números somente: "))
+                "Insira a opção para mostrar aos resultados das opções [ '1', '2', '3' ], digite números somente: "))
             
             if (res == 0):
                 res = 0
@@ -50,7 +52,7 @@ def main(): #-> int:
                 print("1.2 - Mostrar Estados Unidos.")
                 populacao_state()
                 print("1.3 - Mostrar Brasil e Estados Unidos")
-                # brasil_state()
+                brasil_state()
                 espaco()
                 populacional()
                 espaco()
@@ -71,6 +73,27 @@ def main(): #-> int:
                 # comparar Estados Unidos e Brasil 
                 
                 input("continuar pressione [enter]")
+            elif(res == 3):
+                resposta = True
+                
+                so.system("Clear") or None
+
+                print("\033[1;93m")                
+                while resposta == True:
+                    print("insira sua busca: ")
+                    print("Para pesquisar sobre paises digite o nome de um pais serão mostradas algumas informações principais dos paises.")
+                    print("Para procurar a doença é só digitar a palavra 'doença'")
+                    print("exemplo 'doença'")
+                    print("Digite sua pesquisa: ", end="")
+                    busca = input()
+                    
+                    filtro(busca)
+                    
+                    resposta = input("Deseja continuar digite S, para sair N").upper() == "S"
+                    so.system("Clear") or None
+
+                    print("\033[1;93m")
+                
             elif(res == 500):
                 print("\033[1;31m")
                 so.system("Clear") or None

@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 from src.code.configuration_graph import configuration
 
 def doencas_estados_unidos():
+    
+    configuration()
+    
     dataset = datasets(src=URI_UNIT, busca="Doencas Estados Unidos 2019-2020")
 
     data = dataset[0]
@@ -43,19 +46,18 @@ def doencas_estados_unidos():
     "infruenza e pneumunia",
     "doença de kidney",
     "doenças respiratorias cronicas"]
+
     
-    plt.style.use("ggplot")
-    
-    plt.xlabel("Doenças mais comuns")
-    plt.ylabel("Quantidade de Mortos")
+    plt.xlabel = "Doenças mais comuns"
+    plt.ylabel = "Quantidade de Mortos"
 
     plt.title("Doenças Estados Unidos 2019")
     
     plt.xticks = rotulos
     
     
-      
-    plt.bar(x = causas, height= mortes)
+    
+    plt.bar(x = rotulos, height= mortes)
     
     plt.show()
     
@@ -69,7 +71,6 @@ def doencas_estados_unidos():
     plt.title("Percentual de doenças EUA")
     plt.pie(pencentual_doencas, labels=mortes)
     plt.legend(rotulos, loc="lower left")
-    
     plt.show()
 
 
@@ -97,3 +98,7 @@ def doencas_brasil():
     width=0.4)
 
     mt.show()
+    
+    
+def doencas_eua_brasil():
+    pass
