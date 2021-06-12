@@ -23,4 +23,20 @@ def percent_location(valor_total, value):
     perc = (100 * value) / valor_total
 
     return perc
+
+
+def troca(elem, simbolo, mudado):
+    if(simbolo in elem):
+        elem = elem.replace(simbolo, mudado)
+    
+    return elem
+    
+    
+def tira_acento(elem):
+    
+    elem = troca(elem, "Ã§", "c")
+    elem = troca(elem, "Ã£", "a")
+    elem = troca(elem, "Ã´", "o")
+        
+    return elem
     

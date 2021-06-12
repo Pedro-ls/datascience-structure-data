@@ -1,5 +1,5 @@
 from .search import filtro
-from .doencas import doencas_estados_unidos
+from .doencas import data_doencas, doencas_brasil, doencas_estados_unidos, doencas_eua_brasil
 from .imports import *
 
 def espaco():
@@ -62,6 +62,7 @@ def main(): #-> int:
                 so.system("Clear") or None
                 print("2.1 - Mostrar Brasil.")
                 
+                doencas_brasil()
                 # colocar aqui a condição do Brasil                
                 
                 print("2.2 - Mostrar Estados Unidos.")
@@ -71,6 +72,7 @@ def main(): #-> int:
                 print("2.3 - Mostrar Brasil e Estados Unidos")
                 
                 # comparar Estados Unidos e Brasil 
+                doencas_eua_brasil()
                 
                 input("continuar pressione [enter]")
             elif(res == 3):
@@ -95,11 +97,18 @@ def main(): #-> int:
                     print("\033[1;93m")
                 
             elif(res == 500):
+                
                 print("\033[1;31m")
                 so.system("Clear") or None
                 print("você tem que digitar apenas os números indicados")
                 input("continuar pressione [enter]")
         else:
+            print(FOLDER_OUTPUT)
+            
+            with pd.ExcelWriter(FOLDER_OUTPUT.replace("Ã¡", "á").replace("\n", "")+"populacao_doencas_eua_brasil.xlsx") as writer:  # doctest: +SKIP
+                data_doencas().to_excel(writer, sheet_name='doencas')
+                recebe_data()[2].to_excel(writer, sheet_name='população')
+            
             print("\033[1;32m")
             so.system("Clear") or None
             print("FIM DO PROGRAMA ... ")

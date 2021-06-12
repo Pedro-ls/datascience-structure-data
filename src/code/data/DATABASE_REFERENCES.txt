@@ -12,11 +12,9 @@ Arquivos baixados
 Dentro de data/saúde e data/countries
 
 
-
 Arquivos
 * Brazil-2020.csv - populationpyramid
 * United-States.csv - populationpyramid
-* file.csv - 
 * dados_brasil_2019_limpos - Dados pegos no DataSus
-* 
+* CDC - dados de doenças 2019-2020 estados unidos
 

@@ -9,6 +9,7 @@ def configuration(
 
     ):
     mat.style.use("ggplot")
+    
     mat.rcParams["font.weight"] = weight
     mat.rcParams['font.size'] = font_size
     mat.rcParams["font.family"] = family

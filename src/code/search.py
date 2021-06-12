@@ -2,6 +2,8 @@ import pandas as pd
 
 from pandas.core.series import Series
 
+from src.code.modules import tira_acento
+
 from .paths import URI_UNIT
 
 from .process import datasets
@@ -38,9 +40,10 @@ def informacoes(aviso):
         data.append(datasets(URI_UNIT,table)[0])
         
     return data
-    
-def success(busca):
 
+
+def success(busca):
+    
     print("Você digitou: ", busca, " os resultados encontrados foram esses abaixo:")    
 
 
@@ -133,12 +136,32 @@ def show_countries(array):
             print(" ", idade[i], "    ",masculino[i], "    ", feminino[i]) 
 
 
+def uniao_bases_saude_eua_brasil(dataframe0, dataframe1):
+    
+    coluna_nova = dataframe0.columns[2].replace("\n", "")  
+        
+    colunas = [dataframe0.columns[0], dataframe0.columns[1], coluna_nova]
+    
+    dataframe0.columns = colunas
+            
+    dataframe1.insert(1, column="ANO", value=["2019"] * 28)
+    
+    dataframe1.columns = colunas
+    
+    dataframe1["PAIS"] = ["BRASIL"] * 28
+    
+    dataframe0["PAIS"] = ["EUA"] * 16
+    
+    df_data = pd.concat([dataframe0, dataframe1], ignore_index=True)
+    
+    return df_data
+
 
 def filtro(busca:str):
     
     busca = busca.lower()
     
-    if(busca in ["eua", "usa"]):
+    if(busca in ["eua", "usa", "estados Unidos", "united states", "states", "united", "estados", "unidos", "nação unida"]):
         
         array = informacoes(1)
         
@@ -148,7 +171,7 @@ def filtro(busca:str):
         
 
         
-    elif(busca in ["brasil", "brazil"]):
+    elif(busca in ["brasil", "brazil", "br", "br-pt", "brasilian"]):
         
         array = informacoes(2)
         
@@ -156,7 +179,7 @@ def filtro(busca:str):
         
         show_countries(array)
         
-    elif(busca in ["doenca", "doença", "enfermidade", "problema"]):
+    elif(busca in ["doenca", "doença", "enfermidade", "problema", "doencas", "doenças", "morte", "mortes"]):
         
         array = informacoes(4)
         
@@ -166,21 +189,9 @@ def filtro(busca:str):
         
         dataframe1:pd.DataFrame = array[1]
         
-        coluna_nova = dataframe0.columns[2].replace("\n", "")  
+        df_data = uniao_bases_saude_eua_brasil(dataframe0, dataframe1)
         
-        colunas = [dataframe0.columns[0], dataframe0.columns[1], coluna_nova]
-        
-        dataframe0.columns = colunas
-              
-        dataframe1.insert(1, column="ANO", value=["2019"] * 28)
-        
-        dataframe1.columns = colunas
-        
-        dataframe1["PAIS"] = ["BRASIL"] * 28
-        
-        dataframe0["PAIS"] = ["EUA"] * 16
-        
-        df_data = pd.concat([dataframe0, dataframe1], ignore_index=True)
+        df_data["CAUSA DA MORTE"] = df_data["CAUSA DA MORTE"].apply(tira_acento)
         
         print()
         print("DOENÇAS DISPONIVEIS")
@@ -197,4 +208,4 @@ def filtro(busca:str):
             chave = str(input("deseja digitar outra doença digite S para Sim, qualquer outra tecla para não")).upper() == "S"
     else:
     
-        print("nenhuma informação encontrada:")
+        print("nenhuma informação encontrada ...")
